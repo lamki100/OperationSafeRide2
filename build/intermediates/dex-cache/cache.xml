@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1_67bc03b7a4a6f357312997ebb9f09f5c0d0f0352.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.1_84bb6b275553acd6fc3963a170f71488b31a3070.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.1_5995af5f4f95c3aa87d15ae741bb36539d5b92c7.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.1_0a38cae35659027388d36a54a6444fb580828e73.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/libs/activation.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/activation_014532bdc803dc6b790ed9c96e42a2393f38be98.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1_2c32f476f8affade650823f54fb146aee946eeb5.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.2.1_3c4254dc7501f1591b2a025345ffe393d6467d20.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/jacoco/jacocoagent.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ea73283d55c98ab1fccb8c23d76c68b7d7ecbd83">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/jacocoagent_3d714c8bcc02eeb39c0780554f78c6b8b4d3ea18.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/libs/eMMa.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f6cc29cd6ebcb4d03d54f785db26edeb356ea249">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/eMMa_a4b2d80e22df2ef09aadf5d9dd36e1630cdcab7f.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/libs/mail.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/mail_ee0593e0c5f35e1875011bf7febc43595f576436.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.1_644e014133aa15bbaed52604d435e8b463068361.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/libs/additionnal.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/additionnal_c345bf5b8d9b35f10df6a417883b37549d8cf298.jar" />
+    </item>
+    <item
+        jar="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="/Users/klamkin/Projects/Android/SE_320/OperationSafeRide/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.2.1_495c435cccb762eaea277edac999caf1b75f4cf8.jar" />
+    </item>
+
+</items>

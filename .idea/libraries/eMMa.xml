@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="eMMa">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/eMMa.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
