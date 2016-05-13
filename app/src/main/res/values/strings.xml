@@ -12,4 +12,9 @@
     <string name="location_hint">Location</string>
     <string name="cancel_button">Cancel</string>
     <string name="request_button">Request</string>
+    <string name="phone_message">Phone #:</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="help">Help</string>
+    <string name="map">Map</string>
 </resources>
+
