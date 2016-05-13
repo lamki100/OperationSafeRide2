@@ -130,7 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
-            android:onClick=""
+            android:onClick="openMap"
             android:textSize="25sp"
             android:backgroundTint="@android:color/holo_blue_bright"
             android:text="@string/map"/>

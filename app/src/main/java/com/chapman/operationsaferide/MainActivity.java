@@ -13,6 +13,9 @@ import android.widget.TextView;
 import android.content.Context;
 
 import org.w3c.dom.Text;
+import android.content.Intent;
+
+
 
 /**
  *
@@ -116,6 +119,16 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public void help()
+    {
+         String userNum = "7608280121";
+        EmergencyPanic panic = new EmergencyPanic(userNum);
+
+        panic.addEmergencyNotification("help!");
+        panic.sendEmergency();
+        panic.getMessage();
+    }
+
     /**
      * Cancels ride request.
      * @return A boolean variable if successful.
@@ -156,5 +169,11 @@ public class MainActivity extends AppCompatActivity {
         coordinateView.setText(String.valueOf(latitude) + ", " + String.valueOf(longitude));
         //TODO: get call to interact with user class and have user class call location services or whatever
         return true;
+    }
+
+    public void openMap(View v)
+    {
+        Intent mapOpen = new Intent(MainActivity.this, MapActivity.class);
+        startActivity(mapOpen);
     }
 }
