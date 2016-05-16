@@ -22,6 +22,7 @@ public class ChapmanUser extends User
 	private String location;
 	private String state;
 	private String type;
+	private String phoneNumber;
 
 	//private LocationService pickupLocation;
 	//private Map dropoffLocation;
@@ -38,6 +39,7 @@ public class ChapmanUser extends User
 		chapmanID = 0;
 		numGuests = 0;
         location = "";
+		phoneNumber = "";
 		//pickup Location = new LocationService();
 		//dropoffLocation = new Map();
 	}
@@ -51,13 +53,14 @@ public class ChapmanUser extends User
 	 * @param s A string representing state
      *
      */
-    public ChapmanUser(String n, int id, int numG, String s, String l)
+    public ChapmanUser(String n, int id, int numG, String s, String l, String p)
     {
         super(s, "ChapmanStudent", n);
 
         chapmanID = id;
         numGuests = numG;
         location = l;
+		phoneNumber = p;
         //pickup Location = new LocationService();
         //dropoffLocation = new Map();
     }
@@ -141,64 +144,45 @@ public class ChapmanUser extends User
     }
 
 	/**
-	* Gets user type
+	* Gets location of user
 	* @return A variable of type String.
 	*/
-    public String getUserType()
+    public String getLocation()
     {
-        return type;
+        return location;
     }
 	
 	/**
-	* Sets user type
-	* @param t A variable of type String.
+	* Sets location of user
+	* @param l A variable of type String.
 	* @return void
 	*/
-    public void setUserType(String t)
+    public void setLocation(String l)
     {
-        type = t;
+        location = l;
     }
 
 	/**
-	* Sets pickupLocation
-	* @param m
-	* @return void
-	*/
-	
-	//TODO 
-	//public void setPickupLocation(Map m)
-	//{
-	//	this.pickupLocation = m;
-	//}
-	
-	/**
-	* Gets pickupLocation
-	* @return Map
-	*/
-	//public Map getPickupLocation()
-	//{
-	//	return this.pickupLocation;
-	//}
+	 * Gets phone number
+	 * @return A variable of type String.
+	 */
+	public String getPhoneNumber()
+	{
+		return phoneNumber;
+	}
 
 	/**
-	* Sets dropoffLocation
-	* @param m
-	* @return void
-	*/
-	//public void setDropoffLocation(Map m)
-	//{
-	//	this.dropoffLocation = m;
-	//}
+	 * Sets phone number
+	 * @param p A variable of type String.
+	 * @return void
+	 */
+	public void setPhoneNumber(String p)
+	{
+		phoneNumber = p;
+	}
 
-	/**
-	* Gets dropoffLocation
-	* @return Map
-	*/
-	//public Map getDropoffLocation()
-	//{
-	//	return this.dropoffLocation;
-	//}
-	
+
+
 
 	//*********************************************** Override toString ************************************************
 	
@@ -210,7 +194,8 @@ public class ChapmanUser extends User
 	{
 		//Overriding toString method
 		return "Chapman User [Name = " + getName() + ", Chapman ID = " + getID() + ", "
-			+ "Number of Guests = " + getNumGuests() + ", at Location: " + location + "]";
+			+ "Number of Guests = " + getNumGuests() + ", at Location: " + location
+			+ ", with Phone Number: " + phoneNumber + "]";
 	}
 
 

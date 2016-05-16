@@ -41,7 +41,7 @@ public class MapActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void close(View v){
+    public void close(View view){
         this.finish();
     }
 }

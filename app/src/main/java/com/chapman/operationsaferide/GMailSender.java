@@ -1,5 +1,7 @@
 package com.chapman.operationsaferide;
 
+import android.util.Log;
+
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.mail.Message;
@@ -93,7 +95,7 @@ public class GMailSender extends javax.mail.Authenticator {
         }
         catch(Exception e)
         {
-
+            Log.e("EMAIL NOT SENT", "Caught in GMailSender", e);
         }
     }
 
