@@ -1,9 +1,6 @@
 package com.chapman.operationsaferide;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -13,13 +10,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.Context;
-import org.w3c.dom.Text;
 import android.content.Intent;
-import java.util.logging.Handler;
-import android.util.Log;
-import android.Manifest;
 import android.telephony.SmsManager;
-
+import android.support.v4.app.ActivityCompat;
+import android.Manifest;
 
 
 /**
@@ -53,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
         context = this.getApplicationContext();
-        ls = new LocationService(context);
+        //ls = new LocationService(context);
         //coordinateView = (TextView)findViewById(R.id.txt_coor);
 
-        //ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS},1);
+        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS},1);
     }
 
     /**
@@ -122,18 +116,14 @@ public class MainActivity extends AppCompatActivity {
         String message = student.toString() + " is requesting a ride.";
 
         // send request
-        sendText("8589648046", message);
-
-        //Shows dialog that request was sent
-        Toast toast = Toast.makeText(context, "Ride request sent!", Toast.LENGTH_SHORT);
-        toast.show();
+        sendText("8589648046", message, "Ride request sent!");
         return true;
     }
 
     public void callHelp(View view)
     {
         // send help message
-        sendText("8589648046", "HELP");
+        sendText("8589648046", "HELP", "Help Sent!!");
     }
 
     /**
@@ -165,12 +155,7 @@ public class MainActivity extends AppCompatActivity {
         String message = student.toString() + " is CANCELING their ride.";
 
         // cancel request
-        sendText("8589648046", message);
-
-        //Shows dialog that request was canceled
-        Toast toast = Toast.makeText(context, "Ride request canceled!", Toast.LENGTH_SHORT);
-        toast.show();
-
+        sendText("8589648046", message, "Ride request canceled!");
         return true;
     }
 
@@ -189,17 +174,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(mapVisual);
     }
 
-    public void sendText(String number, String message)
+    public void sendText(String number, String message, String toastMessage)
     {
         try {
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(number, null, message, null, null);
-            Toast.makeText(getApplicationContext(), "SMS Sent!",
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_LONG).show();
         } catch (Exception e) {
-            Toast.makeText(getApplicationContext(),
-                    "SMS faild, please try again later!",
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "SMS faild, please try again later!", Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
     }

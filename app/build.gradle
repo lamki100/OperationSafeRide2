@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'jacoco'
 
 android {
     compileSdkVersion 23
@@ -33,17 +32,4 @@ dependencies {
     compile files('src/main/res/libs/mail.jar')
     compile files('libs/mail.jar')
     compile files('libs/additionnal.jar')
-}
-
-task jacocoTestReport(type:JacocoReport, dependsOn: "testDebug") {
-    group = "Reporting"
-    description = "Generate Jacoco coverage reports"
-
-    sourceDirectories = files("${buildDir.parent}/src/main/java/com.chapman.operationsaferide")
-    executionData = files("${buildDir}/jacoco/testDebug.exec")
-
-    reports {
-        xml.enabled = true
-        html.enabled = true
-    }
 }

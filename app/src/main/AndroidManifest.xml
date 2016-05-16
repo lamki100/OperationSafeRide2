@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chapman.operationsaferide">
+    package="com.chapman.operationsaferide"
+    android:versionCode="1"
+    android:versionName="1.0">
 
-    <uses-sdk android:minSdkVersion="10" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-sdk android:minSdkVersion="3" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
