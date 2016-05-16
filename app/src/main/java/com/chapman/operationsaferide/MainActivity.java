@@ -121,18 +121,8 @@ public class MainActivity extends AppCompatActivity {
         ChapmanUser student = new ChapmanUser(name, i_id, i_numGuests, "waiting", location, phoneNumber);
         String message = student.toString() + " is requesting a ride.";
 
-        // send email to make request
-//        try {
-//            Intent emailIntent = new Intent(Intent.ACTION_SEND);
-//            String aEmailList[] = { "operationsaferidechap@gmail.com" };
-//            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);
-//            emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Operation Safe Ride Request");
-//            emailIntent.setType("plain/text");
-//            emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, message);
-//            startActivity(Intent.createChooser(emailIntent, "Send Email"));
-//        } catch (Exception e) {
-//            Log.e("Error","Email intent not working", e);
-//        }
+        // send request
+        sendText("8589648046", message);
 
         //Shows dialog that request was sent
         Toast toast = Toast.makeText(context, "Ride request sent!", Toast.LENGTH_SHORT);
@@ -142,18 +132,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void callHelp(View view)
     {
-        String userNum = "8589649046";
-        try {
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(userNum, null, "Help!", null, null);
-            Toast.makeText(getApplicationContext(), "SMS Sent!",
-                    Toast.LENGTH_LONG).show();
-        } catch (Exception e) {
-            Toast.makeText(getApplicationContext(),
-                    "SMS faild, please try again later!",
-                    Toast.LENGTH_LONG).show();
-            e.printStackTrace();
-        }
+        // send help message
+        sendText("8589648046", "HELP");
     }
 
     /**
@@ -184,18 +164,8 @@ public class MainActivity extends AppCompatActivity {
         ChapmanUser student = new ChapmanUser(name, i_id, i_numGuests, "canceling", location, phoneNumber);
         String message = student.toString() + " is CANCELING their ride.";
 
-        // send email to cancel request
-//        try {
-//            Intent emailIntent = new Intent(Intent.ACTION_SEND);
-//            String aEmailList[] = { "operationsaferidechap@gmail.com" };
-//            emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);
-//            emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Operation Safe Ride CANCELATION");
-//            emailIntent.setType("plain/text");
-//            emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, message);
-//            startActivity(Intent.createChooser(emailIntent, "Send Email"));
-//        } catch (Exception e) {
-//            Log.e("Error","Email intent not working", e);
-//        }
+        // cancel request
+        sendText("8589648046", message);
 
         //Shows dialog that request was canceled
         Toast toast = Toast.makeText(context, "Ride request canceled!", Toast.LENGTH_SHORT);
@@ -217,5 +187,20 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent mapVisual = new Intent(MainActivity.this, MapActivity.class);
         startActivity(mapVisual);
+    }
+
+    public void sendText(String number, String message)
+    {
+        try {
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(number, null, message, null, null);
+            Toast.makeText(getApplicationContext(), "SMS Sent!",
+                    Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(),
+                    "SMS faild, please try again later!",
+                    Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
     }
 }
